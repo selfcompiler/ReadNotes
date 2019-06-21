@@ -1,0 +1,29 @@
+When developing a server-side application you can start it with a modular hexagonal or layered architecture
+which consists of different types of components:
+
+Presentation — responsible for handling HTTP requests and responding with either HTML or JSON/XML (for web services APIs).
+Business logic — the application’s business logic.
+Database access — data access objects responsible for access the database.
+Application integration — integration with other services (e.g. via messaging or REST API).
+
+Benefits of Monolithic Architecture :
+
+1. Simple to develop
+2. Simple to Test (Simply can do e2e testing just by launching an application)
+3. Simple to deploy
+4. Simple to scale horizontally by running multiple copies behind load balancer 
+
+Notes :In the early stages of the project it works well and basically most of the big and successful applications 
+which exist today were started as a monolith.
+
+Drawbacks of Monolithic Architecture :
+
+1. Application would be too large and complex to fully understand and made changes fast and correctly .
+2. The size of the application can slow down the startup time.
+3. Redeploy entire application for each update 
+4. Impact of a change is usually not very well understood which leads to extensive manual testing.
+5. Continuous deployment is difficult.
+6. Monolithic application can also be difficult to scale when different modules have conflicting resource requirement .
+7. Bug (Memory Leak ) in any module can bring down the entire process application .
+8. Monolithic application has a barrier to addopt new technologies ,Since the changes in framework or language can affect 
+   entire application ,it is extremely expensive in both time and cost
