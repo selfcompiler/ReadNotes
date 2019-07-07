@@ -10,4 +10,6 @@ and each tries to be polite by moving aside to let the other pass, but they end 
 swaying from side to side without making any progress because they both repeatedly 
 move the same way at the same time.
 
-Livelock is a risk with some algorithms that detect and recover from deadlock. If more than one process takes action, the deadlock detection algorithm can be repeatedly triggered. This can be avoided by ensuring that only one process (chosen randomly or by priority) takes action.
+Livelock is a risk with some algorithms that detect and recover from deadlock.
+If more than one process takes action, the deadlock detection algorithm can be repeatedly triggered.
+This can be avoided by ensuring that only one process (chosen randomly or by priority) takes action.
